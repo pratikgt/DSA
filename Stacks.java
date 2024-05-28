@@ -1,10 +1,10 @@
-public class Stack {
+public class Stacks {
     private int maxSize; // maximum size of the stack
     private int[] stackArray; // array to store stack elements
     private int top; // top of the stack
 
     // Constructor to initialize the stack
-    public Stack(int size) {
+    public Stacks(int size) {
         this.maxSize = size;
         this.stackArray = new int[maxSize];
         this.top = -1; // stack is initially empty
@@ -52,7 +52,7 @@ public class Stack {
 
     // Main method to demonstrate stack operations
     public static void main(String[] args) {
-        Stack stack = new Stack(5); // Create a stack of size 5
+        Stacks stack = new Stacks(5); // Create a stack of size 5
 
         // Demonstrate stack operations
         stack.push(10);
