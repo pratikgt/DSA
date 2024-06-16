@@ -1,12 +1,12 @@
 public class Stacks {
     private int maxSize; // maximum size of the stack
-    private int[] stackArray; // array to store stack elements
+    private int[] StackArray; // array to store stack elements
     private int top; // top of the stack
 
     // Constructor to initialize the stack
     public Stacks(int size) {
         this.maxSize = size;
-        this.stackArray = new int[maxSize];
+        this.StackArray = new int[maxSize];
         this.top = -1; // stack is initially empty
     }
 
@@ -15,7 +15,7 @@ public class Stacks {
         if (isFull()) {
             System.out.println("Stack is full. Cannot push " + value);
         } else {
-            stackArray[++top] = value;
+            StackArray[++top] = value;
             System.out.println("Pushed " + value + " to the stack.");
         }
     }
@@ -26,7 +26,7 @@ public class Stacks {
             System.out.println("Stack is empty. Cannot pop.");
             return -1; // indicating stack is empty
         } else {
-            return stackArray[top--];
+            return StackArray[top--];
         }
     }
 
@@ -36,7 +36,7 @@ public class Stacks {
             System.out.println("Stack is empty. Cannot peek.");
             return -1; // indicating stack is empty
         } else {
-            return stackArray[top];
+            return StackArray[top];
         }
     }
 
